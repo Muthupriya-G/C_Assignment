@@ -1,0 +1,32 @@
+#include<stdio.h>
+int main(){
+	int x;
+	int y,z,f,l,p=1,m,r,n=0,i,temp,a,k,b=1,j=0;
+	printf("Enter the number:");
+	scanf("%d",&x);
+    for(j=0;j<1;j++){
+	temp=x;
+	while(x!=0){
+		x=x/10;
+		n++;
+	}
+	for(i=1;i<n;i++){
+		p = p * 10;
+	}
+	a=i-1;
+	for(k=1;k<a;k++){
+		b = b*10;
+	}
+	l=temp%10;
+    f=temp/p;
+    z=temp/10;
+    m=z-(f*b);
+	if(f%2 == 1){
+		f=f-1;
+	}
+	r = f*p + m*10 +l;
+	printf("%d",r);
+}
+	
+}
+
